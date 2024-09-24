@@ -23,6 +23,7 @@ def get_numbers_ticket(min: int, max: int, quantity: int):
 
 
     result = random.sample(generate_numbers_list(min, max), quantity)
+    result.sort()
     return result
     
     
@@ -35,5 +36,5 @@ def generate_numbers_list(min: int, max: int):
     
     return result_list
     
-result = get_numbers_ticket(2, 7, 6)
+result = get_numbers_ticket(2, 500, 6)
 print(result)
